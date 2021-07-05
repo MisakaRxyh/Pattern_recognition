@@ -14,9 +14,6 @@ def get_feature_vector(r, n, d):
     for i in range(n):
         v.append(vector[:, sort_index[i]].reshape(d, 1))
     selected_vector = np.concatenate(v, axis=1)
-    # selected_vector = np.concatenate((vector[:, sort_index[0]].reshape(100, 1),
-    #                                   vector[:, sort_index[1]].reshape(100, 1)),
-    #                                  axis=1)
     return selected_vector
 
 
